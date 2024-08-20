@@ -64,13 +64,20 @@
             padding: 2em;
             max-width: 900px;
             margin: auto;
-            background: white;
+            background: #ffffff;
             border-radius: 12px;
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
             border: 1px solid #ddd;
             position: relative;
             z-index: 1;
             overflow: hidden;
+            background: linear-gradient(145deg, #ffffff, #f0f0f0);
+            animation: backgroundShift 15s ease infinite;
+        }
+        @keyframes backgroundShift {
+            0% { background: linear-gradient(145deg, #ffffff, #f0f0f0); }
+            50% { background: linear-gradient(145deg, #f0f0f0, #ffffff); }
+            100% { background: linear-gradient(145deg, #ffffff, #f0f0f0); }
         }
         h1, h2 {
             color: #0072ff;
@@ -172,7 +179,7 @@
     <main>
         <div class="profile-container">
             <div class="profile-picture">
-                <img src="https://via.placeholder.com/150" alt="Chitron Bhattacharjee">
+                <img src="https://iili.io/dVon891.md.jpg" alt="Chitron Bhattacharjee">
             </div>
         </div>
 
