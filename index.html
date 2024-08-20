@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chitron Bhattacharjee - AI Developer & Programmer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            background-attachment: fixed;
+        }
+        header {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            border-bottom: 6px solid #ff7e5f;
+            border-radius: 0 0 20px 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        header p {
+            font-size: 1.5em;
+            margin: 0;
+        }
+        .profile-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2em 0;
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 6px solid #0072ff;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s;
+        }
+        .profile-picture img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+        .profile-picture:hover {
+            transform: scale(1.05);
+        }
+        main {
+            padding: 2em;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+            border: 1px solid #ddd;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+        h1, h2 {
+            color: #0072ff;
+            border-bottom: 3px solid #0072ff;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        section {
+            margin-bottom: 2em;
+        }
+        .project-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5em;
+        }
+        .project-item {
+            background: #f9f9f9;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+            padding: 1.5em;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(145deg, #ffffff, #e0e0e0);
+        }
+        .project-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
+        }
+        .project-item::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            width: calc(100% + 20px);
+            height: calc(100% + 20px);
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            z-index: -1;
+            transform: rotate(-4deg);
+            transition: background 0.3s;
+        }
+        .project-item:hover::before {
+            background: rgba(0, 0, 0, 0.2);
+        }
+        .project-icon {
+            font-size: 2.5em;
+            color: #0072ff;
+            flex-shrink: 0;
+        }
+        .project-description {
+            flex: 1;
+        }
+        .project-description strong {
+            display: block;
+            font-size: 1.3em;
+            margin-bottom: 0.5em;
+        }
+        footer {
+            background: #ff7e5f;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.4);
+            border-top: 6px solid #ff7e5f;
+            border-radius: 20px 20px 0 0;
+        }
+        a {
+            color: #0072ff;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 2px solid #0072ff;
+            transition: color 0.3s, border-color 0.3s;
+        }
+        a:hover {
+            color: #0056b3;
+            border-color: #0056b3;
+        }
+        .emoji {
+            font-size: 1.4em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chitron Bhattacharjee <span class="emoji">👨‍💻</span></h1>
+        <p>AI Developer & Programmer</p>
+    </header>
+
+    <main>
+        <div class="profile-container">
+            <div class="profile-picture">
+                <img src="https://via.placeholder.com/150" alt="Chitron Bhattacharjee">
+            </div>
+        </div>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Chitron Bhattacharjee, also known as Adi, is a Bangladeshi AI developer and programmer. He is a student of science in the eleventh grade at Mymensingh College. Alongside his studies, Chitron is actively involved in computer programming and development.</p>
+            <p>Chitron is passionate about integrating technology and creativity in his work and continues to explore new opportunities in the field of AI and software development. <span class="emoji">🚀</span></p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul class="project-list">
+                <li class="project-item">
+                    <i class="project-icon fas fa-mobile-alt"></i>
+                    <div class="project-description">
+                        <strong>Oii Shunoo</strong>: A unique social media app that blends social media features with gaming, providing users with a hybrid experience. <span class="emoji">📱🎮</span>
+                    </div>
+                </li>
+                <li class="project-item">
+                    <i class="project-icon fas fa-robot"></i>
+                    <div class="project-description">
+                        <strong>ShiPu Bot</strong>: An AI bot that he developed. <span class="emoji">🤖</span>
+                    </div>
+                </li>
+                <li class="project-item">
+                    <i class="project-icon fas fa-shield-alt"></i>
+                    <div class="project-description">
+                        <strong>MCA TEAM</strong>: A cybersecurity app designed for Arif Broh's cybersecurity team. <span class="emoji">🔒🛡️</span>
+                    </div>
+                </li>
+                <li class="project-item">
+                    <i class="project-icon fas fa-user-secret"></i>
+                    <div class="project-description">
+                        <strong>Black Hunter Team</strong>: A cybersecurity experts team and AI development team. <span class="emoji">🕵️‍♂️💻</span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me at <a href="mailto:chitronbhattacharjee@gmail.com">chitronbhattacharjee@gmail.com</a>.</p>
+            <p>Connect with me on <a href="https://www.facebook.com/brandchitron" target="_blank">Facebook <span class="emoji">📘</span></a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Chitron Bhattacharjee. All rights reserved. <span class="emoji">©</span></p>
+    </footer>
+</body>
+</html>
